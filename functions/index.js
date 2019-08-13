@@ -53,14 +53,14 @@ exports.authorizeLogin = functions
   .onCall((data, context) => {
 
     const contextAuth = context.auth;
-    if (contextAuth === null) {
+    if (contextAuth === undefined) {
       return {
         authorized: "false"
       };
     }
 
     const token = contextAuth.token;
-    if (token === null) {
+    if (token === undefined) {
       return {
         authorized: "false"
       };
