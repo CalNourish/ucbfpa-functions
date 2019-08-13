@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "testcalnourish",
+    "prod": "prodcalnourish",
+    "dev": "testcalnourish"
+  }
+}
